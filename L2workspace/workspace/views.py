@@ -2,7 +2,7 @@ from django.shortcuts import render , HttpResponse
 
 
 def index(request):
-    return render(request, 'nav.html')
+    return render(request, 'main.html')
     
 
 def wiki_view(request):
