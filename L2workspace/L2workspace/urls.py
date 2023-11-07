@@ -19,6 +19,8 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('workspace/', include('workspace.urls')),
+    path('', include("workspace.urls")),
+    path('wiki_view/', include("workspace.urls")),
+
     #point to my workspace app so my project knows it exists
 ]

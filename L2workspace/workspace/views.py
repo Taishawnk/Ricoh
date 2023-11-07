@@ -2,5 +2,14 @@ from django.shortcuts import render , HttpResponse
 
 
 def index(request):
-    return render(request, 'base.html')
-# Create your views here.
+    return render(request, 'nav.html')
+    
+
+def wiki_view(request):
+    return render(request, 'wiki.html')
+    
+    
+    
+    
+    
+    # Create your views here.
