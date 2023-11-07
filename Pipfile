@@ -6,6 +6,11 @@ name = "pypi"
 [packages]
 django = "*"
 django-allauth = "*"
+jinja2 = "*"
+babel = "*"
+markupsafe = "*"
+npm = "*"
+django-bootstrap-v5 = "*"
 
 [dev-packages]
 
