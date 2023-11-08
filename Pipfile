@@ -11,6 +11,7 @@ babel = "*"
 markupsafe = "*"
 npm = "*"
 django-bootstrap-v5 = "*"
+django-sass = "*"
 
 [dev-packages]
 

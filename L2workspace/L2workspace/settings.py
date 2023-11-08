@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
     #my apps
     "workspace.apps.WorkspaceConfig",
+    'django_sass',
 ]
 
 MIDDLEWARE = [
