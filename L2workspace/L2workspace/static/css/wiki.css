@@ -2,7 +2,10 @@
     display: flex-block;
     align-items: center;
     text-align: center;
-    border: 7px solid orangered;
+    padding-left: 25%;
+    padding-right: 25%;
+    height: 100vh;
+    border: 7px solid transparent orangered;
 }
 
 .wikiheadertext{
@@ -11,8 +14,30 @@
     margin: 45px auto;
 }
 
+.carouseloutter{
+    margin: 40px auto ;
+    border: 3px solid transparent purple ;
+}
+.carouselinner{
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    border: 3px solid red transparent!important;
+}
+
+.RPDcarousel{
+    width: 50vw ;
+    padding: 5px;;
+    border: 3px solid green transparent !important;
+}
+
 
 .carousel-item.active{
     display: inline;
     justify-items: flex-start;
+}
+
+.img{
+ width: 100vw !important;
+ height: 10px;;   
 }
