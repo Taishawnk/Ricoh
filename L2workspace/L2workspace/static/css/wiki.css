@@ -1,3 +1,28 @@
 .wikiviewmainwrapper{
-    background-color: aqua;
+    display: flex-block;
+    align-items: center;
+    text-align: center;
+    border: 7px solid orangered;
+}
+
+.wikiheadertext{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: bold;
+}
+
+
+.carouselinner{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 5px solid greenyellow;
+}
+
+.carousel {
+
+    width: 20em;
+    height: 20em;
+    border: 3px solid red;
 }
