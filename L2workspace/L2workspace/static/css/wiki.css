@@ -1,15 +1,18 @@
 .wikiviewmainwrapper{
-
     display: flex-block;
     align-items: center;
     text-align: center;
     border: 7px solid orangered;
 }
 
+.wikiheadertext{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin: 45px auto;
+}
 
 
 .carousel-item.active{
     display: inline;
     justify-items: flex-start;
-
 }
