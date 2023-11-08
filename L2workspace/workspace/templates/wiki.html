@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html>
-    {% load static %}
-    <link rel='stylesheet' href={% static 'wiki.css'%}>
-    {%include "nav.html" %}
-<body>
-    {%block content%}
-        <h1>Hello From Wiki.html</h1>
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    {%endblock%}
-</body>
-</html>
+{% load static %}
+{%block css_files%}  
+  <link rel='stylesheet' href={% static "/css/wiki.css"%}>
+{%endblock%}
+{% comment "" %}grabs this from the block I creted in base dir{% endcomment %}
+
+{%include "nav.html" %}  
+{%block content%}
+<div class="wikiviewmainwrapper">
+  <h1 class="wikiheadertext">Hello From Wiki.html</h1>
+
+</div>
+{%endblock%}
+
 
 
