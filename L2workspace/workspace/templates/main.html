@@ -1,10 +1,17 @@
+{% extends "base.html" %}
 {% load static %}
-{%block css_files%}  
-  <link rel='stylesheet' href={% static "/css/main.css"%}>
-{%endblock%}
-{% comment "" %}grabs this from the block I creted in base dir{% endcomment %}
 
-{%include "nav.html" %}  
-{%block content%}
-    <h1 class="mainheadertext">Hello From L2 Home</h1>
-{%endblock%}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    {# You can also include additional CSS files specific to this page if needed. #}
+{% endblock %}
+
+{% block content_two %}
+    <div class="mainviewWrap">  {# Apply the .mainviewWrap class here #}
+        <h1>Hello</h1>
+        <p>This content is within the .mainviewWrap container.</p>
+    </div>
+{% endblock %}
+
+
+

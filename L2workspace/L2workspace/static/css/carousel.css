@@ -1,0 +1,30 @@
+
+.wikiheadertext{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin: 45px auto;
+}
+
+.carouseloutter{
+    display: flex ;
+    justify-content: center;
+    margin: 40px auto ;
+    border: 3px solid transparent purple ;
+}
+.carouselinner{
+  
+    text-align: center;
+   
+    border: 3px solid red transparent !important;
+}
+
+.RPDcarousel{
+
+    width: 25vw ;
+    padding: 5px;;
+    border: 3px solid green transparent !important;
+}
+
+
+
