@@ -7,24 +7,26 @@
 }
 
 .carouseloutter{
+    /* remmember I am also adding in the unified dash board  in this outer layer */
     display: flex ;
     justify-content: center;
-    margin: 40px auto ;
-    border: 3px solid transparent purple ;
+    
+    border: 1px solid  rgb(112, 0, 0) ;
+    padding: 10px;
 }
+
+
 .carouselinner{
+    width: 100% ;
+    border: 1px solid rgb(41, 0, 0);
+
+    
+
+}
+
+
+
+img { 
+    
   
-    text-align: center;
-   
-    border: 3px solid red transparent !important;
-}
-
-.RPDcarousel{
-
-    width: 25vw ;
-    padding: 5px;;
-    border: 3px solid green transparent !important;
-}
-
-
-
+    }
