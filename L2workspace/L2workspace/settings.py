@@ -40,10 +40,15 @@ INSTALLED_APPS = [
     
     #my apps
     "workspace.apps.WorkspaceConfig",
-    'django_sass',
+    'rest_framework',
+    'corsheaders',
 ]
+CORS_ORIGIN_ALLOW_ALL = True
+#for allows the cors origin to be used in the frontend app security related
 
+# adding 'corsheaders.middleware.CorsMiddleware', to top of middleware chain for cors
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -126,5 +131,5 @@ STATIC_URL = '/static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'L2workspace/static'), )#told Django where to look for static files
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticFiles/static'), )#told Django where to look for static files
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

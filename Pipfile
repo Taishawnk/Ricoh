@@ -11,7 +11,14 @@ babel = "*"
 markupsafe = "*"
 npm = "*"
 django-bootstrap-v5 = "*"
-django-sass = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+pip = "*"
+install = "*"
+channels = "*"
+requests = "*"
+psycopg2-binary = "*"
+celery = "*"
 
 [dev-packages]
 
