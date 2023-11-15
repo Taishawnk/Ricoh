@@ -19,6 +19,7 @@ channels = "*"
 requests = "*"
 psycopg2-binary = "*"
 celery = "*"
+pylint = "*"
 
 [dev-packages]
 

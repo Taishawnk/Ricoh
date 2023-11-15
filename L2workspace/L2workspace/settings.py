@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-eh6$w&h0(3s_00s^hcoh4f#a7bdk4ig__5qtfifq3vzs-fi3m8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True #also we need to serve static files differently in production see https://docs.djangoproject.com/en/4.2/howto/static-files/ bullet 4 
 
 ALLOWED_HOSTS = []
 
@@ -39,9 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     #my apps
-    "workspace.apps.WorkspaceConfig",
+    'authentication',
+    'workspace',
+    'user_profile',
     'rest_framework',
     'corsheaders',
+
 ]
 CORS_ORIGIN_ALLOW_ALL = True
 #for allows the cors origin to be used in the frontend app security related

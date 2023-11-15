@@ -1,9 +1,11 @@
 from django.urls import path
 from . import views #importing the views file from this directory
 
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('wiki_view/', views.wiki_view, name='wiki_view'),
+    #path('login_user/', views.login_user, name='login_user'),
 
 ]
 
