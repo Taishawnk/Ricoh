@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-eh6$w&h0(3s_00s^hcoh4f#a7bdk4ig__5qtfifq3vzs-fi3m8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True #also we need to serve static files differently in production see https://docs.djangoproject.com/en/4.2/howto/static-files/ bullet 4 
+DEBUG = True #also we need to serve static files differently in production see https://docs.djangoproject.com/en/4.2/howto/static-files/ bullet 4 in production I will be using 
+#aws or some other way to serve static files in production
 
 ALLOWED_HOSTS = []
 
@@ -74,6 +75,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'L2workspace.context_processors.vue_js_files',
                 
             ],
         },
@@ -130,9 +132,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
+STATICFILES_BASE_DIRS = BASE_DIR / 'staticFiles/static'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticFiles/static'), )#told Django where to look for static files
+
+
+STATICFILES_DIRS = [STATICFILES_BASE_DIRS,]#told Django where to look for static files including my Vue dev and prod 
+STATIC_ROOT = str(BASE_DIR.parent / "static_cdn" / "static")
+
+MEDIA_URL = 'media/'
+STATIC_ROOT = str(BASE_DIR.parent / "static_cdn" / "media")#will swap static_cdn path for actual aws s3 or other when actually deploying 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

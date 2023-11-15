@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite build --mode development --base /static/vue-dev/ --outDir ./staticFiles/static/vue-dev/ -w",
-    "build": "vite build --mode production --base /static/vue-prod/ --outDir ./staticFiles/static/vue-prod/ -w",
+    "dev": "vite build --mode development --base /staticFiles/static/vue-dev/ --outDir ./staticFiles/static/vue-dev/ -w",
+    "build": "vite build --mode production --base /staticFiles/static/vue-prod/ --outDir ./staticFiles/static/vue-prod/ -w",
     "preview": "vite preview"
   },
   "dependencies": {
