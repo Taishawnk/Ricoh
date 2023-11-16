@@ -40,9 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     #my apps
-    'authentication',
+  
     'workspace',
-    'user_profile',
+    
     'rest_framework',
     'corsheaders',
 
@@ -138,7 +138,7 @@ STATICFILES_BASE_DIR = BASE_DIR / 'staticFiles/static'
 
 
 
-STATICFILES_DIR = [STATICFILES_BASE_DIR,]#told Django where to look for static files including my Vue dev and prod 
+STATICFILES_DIRS = [STATICFILES_BASE_DIR,]#told Django where to look for static files including my Vue dev and prod 
 STATIC_ROOT = str(BASE_DIR.parent / "static_cdn" / "static")
 
 MEDIA_URL = 'media/'
