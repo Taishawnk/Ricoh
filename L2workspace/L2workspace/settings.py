@@ -132,13 +132,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_BASE_DIRS = BASE_DIR / 'staticFiles/static'
+STATICFILES_BASE_DIR = BASE_DIR / 'staticFiles/static'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 
 
-STATICFILES_DIRS = [STATICFILES_BASE_DIRS,]#told Django where to look for static files including my Vue dev and prod 
+STATICFILES_DIR = [STATICFILES_BASE_DIR,]#told Django where to look for static files including my Vue dev and prod 
 STATIC_ROOT = str(BASE_DIR.parent / "static_cdn" / "static")
 
 MEDIA_URL = 'media/'

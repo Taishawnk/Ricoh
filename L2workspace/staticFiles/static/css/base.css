@@ -5,7 +5,7 @@
 
 .mainviewWrap {
     display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-columns: 0.5fr 2fr ; /*add this back after vue file testing 0.5fr*/
 }
 
 .courselcontent {

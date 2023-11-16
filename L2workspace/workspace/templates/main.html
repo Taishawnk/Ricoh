@@ -3,15 +3,16 @@
 
 {% block css_files %}
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    {% for file in vue_css_paths %}
+        <link rel=stylesheet href"{% static file %}"></link>
+    {% endfor %}
     {# You can also include additional CSS files specific to this page if needed. #}
 {% endblock %}
 
 {% block content_two %}
     <div class="mainviewWrap">  {# Apply the .mainviewWrap class here #}
-        <h1>Hello</h1>
+        <div id='app'></div>
 
-        <p>{{vue_js_paths}}</p>
-    </div>
 {% endblock %}
 
 
