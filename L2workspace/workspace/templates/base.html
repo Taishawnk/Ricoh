@@ -11,10 +11,11 @@
 </head>
 <body>
     {% block content %}
-    {% endblock %}
-    {% for file in vue_js_paths %}
+        {% for file in vue_js_paths %}
         <script type="module"  src="{% static file %}"></script>
         {% endfor %}
+    {% endblock %}
+
 </body>
 </html>
 
