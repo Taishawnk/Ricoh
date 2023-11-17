@@ -3,7 +3,7 @@
 
 {% block content %}
 <div id='app'></div>
-{%for file in vue_js_paths%}
+{%for file in vue_js_paths%}{% comment "" %}this for loop is what kept my content from showing{% endcomment %}
     <script src="{% static file %}"></script>   
 {% endfor %}
 {% endblock %}
