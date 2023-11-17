@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-eh6$w&h0(3s_00s^hcoh4f#a7bdk4ig__5qtfifq3vzs-fi3m8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True #also we need to serve static files differently in production see https://docs.djangoproject.com/en/4.2/howto/static-files/ bullet 4 in production I will be using 
 #aws or some other way to serve static files in production
-
+VUE_PROD = False #
 ALLOWED_HOSTS = []
 
 

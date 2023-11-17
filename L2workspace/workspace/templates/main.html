@@ -3,7 +3,9 @@
 
 {% block content %}
 <div id='app'></div>
-    {{vue_js_paths}}
+{%for file in vue_js_paths%}
+    <script src="{% static file %}"></script>   
+{% endfor %}
 {% endblock %}
 
 
