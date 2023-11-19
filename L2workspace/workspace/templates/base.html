@@ -12,12 +12,14 @@
 </head>
 <body>
     {%comment%}{% include "elementhtml/nav.html" %}{% endcomment%}
-    {% include "elementhtml/nav.html" %}
+    {%block nav%}
+        {% include "elementhtml/nav.html" %}
+    {%endblock%}
     {% block content %}
     {% endblock %}
     
     {%for file in vue_js_paths%}{% comment "" %}this for loop is what kept my content from showing it cannot go in my contentblock in this base.html file{% endcomment %} 
-    <script  src="{% static file %}"></script>   
+        <script  src="{% static file %}"></script>   
     {% endfor %}
     {%include "elementhtml/footer.html"%}
 </body>
