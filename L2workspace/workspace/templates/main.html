@@ -1,12 +1,12 @@
-{% extends "base.html" %}
+{%extends 'base.html'%}
 {% load static %}
 
 {% block content %}
-<div id='app'></div>
-{%for file in vue_js_paths%}{% comment "" %}this for loop is what kept my content from showing{% endcomment %}
-    <script src="{% static file %}"></script>   
-{% endfor %}
+    <div id='app'  data-token={{ csrf_token }} {%if user.is_authenticated%} dat-user = {{user}} {% endif %}></div> {%comment%}brings in csrf_token brings in user if authenticated
+    lets use view from the console 
+    {% endcomment %}
 {% endblock %}
+
 
 
 

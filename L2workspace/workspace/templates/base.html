@@ -11,11 +11,11 @@
 </head>
 <body>
     {% block content %}
-        {% for file in vue_js_paths %}
-        <script type="module"  src="{% static file %}"></script>
-        {% endfor %}
     {% endblock %}
-
+    <h1>hello</h1>
+    {%for file in vue_js_paths%}{% comment "" %}this for loop is what kept my content from showing it cannot go in my contentblock in this base.html file{% endcomment %} 
+    <script  src="{% static file %}"></script>   
+    {% endfor %}
 </body>
 </html>
 
