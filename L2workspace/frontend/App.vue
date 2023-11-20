@@ -1,5 +1,4 @@
 <script setup>
-
 import TheWelcome from './components/TheWelcome.vue'
 const props = defineProps({
   token: String, 

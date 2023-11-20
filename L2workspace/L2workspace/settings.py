@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     #my apps
   
     'workspace',
-    
     'rest_framework',
     'corsheaders',
 
