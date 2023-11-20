@@ -1,5 +1,4 @@
 <script setup>
-
 import TheWelcome from './components/TheWelcome.vue'
 const props = defineProps({
   token: String, 
@@ -10,7 +9,7 @@ const props = defineProps({
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="/staticFiles/static/vue-dev/assets/logo-277e0e97.svg" width="125" height="125" />
+    
     {{props.token}}
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
