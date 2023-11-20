@@ -13,7 +13,7 @@ const props = defineProps({
     
     {{props.token}}
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="You did its!" />
     </div>
   </header>
 
