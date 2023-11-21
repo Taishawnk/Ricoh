@@ -1,18 +1,13 @@
-{% extends "base.html" %}
+{%extends 'base.html'%}
 {% load static %}
 
-{% block css_files %}
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    {# You can also include additional CSS files specific to this page if needed. #}
+{% block content %}
+<div id='app'  data-token={{ csrf_token }} {%if user.is_authenticated%} data-user = {{user}} {% endif %}></div> {%comment%}brings in csrf_token brings in user if authenticated
+lets use view from the console 
+{% endcomment %}
+    
 {% endblock %}
 
-{% block content_two %}
-    <div class="mainviewWrap">  {# Apply the .mainviewWrap class here #}
-        <h1>Hello</h1>
-
-        <p>{{vue_js_paths}}</p>
-    </div>
-{% endblock %}
 
 
 

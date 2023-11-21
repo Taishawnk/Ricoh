@@ -1,14 +1,19 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+const props = defineProps({
+  token: String, 
+  user: String}) // creats props object and assigns them to the Vue instance passed in token and user from main.js file  ? means it is optional didnt have to pring in defineProps 
+  //because it came with  script setup but this is not ture for ever built in vue 
+  console.log(props.token)
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+    
+    {{props.token}}
+    {{props.user}}
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="You did its!" />
     </div>
   </header>
 

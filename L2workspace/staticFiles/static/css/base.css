@@ -5,7 +5,7 @@
 
 .mainviewWrap {
     display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-columns: 0.5fr 2fr ; /*add ths back after vue file testing 0.5fr*/
 }
 
 .courselcontent {
@@ -16,9 +16,6 @@
     color: blue;
 }
 
-.footerContent {
-    /* Add styles here if needed */
-}
 
 .footer-container {
     border-top: 1px solid gray;

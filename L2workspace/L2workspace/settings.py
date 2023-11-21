@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-eh6$w&h0(3s_00s^hcoh4f#a7bdk4ig__5qtfifq3vzs-fi3m8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True #also we need to serve static files differently in production see https://docs.djangoproject.com/en/4.2/howto/static-files/ bullet 4 in production I will be using 
 #aws or some other way to serve static files in production
-
+VUE_PROD = False #
 ALLOWED_HOSTS = []
 
 
@@ -40,9 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     #my apps
-    'authentication',
+  
     'workspace',
-    'user_profile',
     'rest_framework',
     'corsheaders',
 
@@ -132,13 +131,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_BASE_DIRS = BASE_DIR / 'staticFiles/static'
+STATICFILES_BASE_DIR = BASE_DIR / 'staticFiles/static'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 
 
-STATICFILES_DIRS = [STATICFILES_BASE_DIRS,]#told Django where to look for static files including my Vue dev and prod 
+STATICFILES_DIRS = [STATICFILES_BASE_DIR,]#told Django where to look for static files including my Vue dev and prod 
 STATIC_ROOT = str(BASE_DIR.parent / "static_cdn" / "static")
 
 MEDIA_URL = 'media/'
